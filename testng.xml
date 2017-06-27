@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Test Scripts" parallel="classes" thread-count="5"
+	verbose="10">
+	<test name="MySource - Sanity Test Scripts">
+		<classes>
+ 
+			<class name="testscripts.Test_MySource_Benefits_BenefitHealthHistoryList" />
+			<class
+				name="testscripts.Test_MySource_Benefits_BenefitHealthHistoryList_AlternativeURL" />
+			<class
+				name="testscripts.Test_MySource_Benefits_DependentTracking_DependentTrackingProcess" />
+			<class
+				name="testscripts.Test_MySource_Benefits_LOAProcess_BenefitsLOAProcessFrame" />
+			<class
+				name="testscripts.Test_MySource_Benefits_LOAProcess_BenefitsLOAProcessListing" />
+				
+<class
+                name="testscripts.Test_MySource_Benefits_LOAProcess_BenefitsLOAProcessFrame" />
+
+		</classes>
+	</test>
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+</suite>
